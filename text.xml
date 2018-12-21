@@ -1,9 +1,11 @@
-
-
+tu trzeba wyrownac buttony
 
 <?xml version="1.0" encouding="utf-8"?>
 <LinearLayout
    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:padding="25dp"
+                    |
+                    to jest padding wokol wszystkiego, jakby ramka przy brzegu ekranu dookola
    android:orientation="vertical"
    android:layout_width="match_parent"
    android:layout_height="match_parent" >
@@ -13,14 +15,35 @@
     android:layout_height="wrap_content"
     android:id="@+id/etCommands"
     android:hint="type a command"
-            |
-            gdyby tu bylo text to tez by sie pokazywalo ale nie kasowalo przy kliknieciu na pole
-    android:password="true" >
-    <Button
-    android:text="Button"
-    android:id="@+id/bResults"
-    android:layout_width="wrap_content"
-    android:layout_hieght="wrap_content" />
+    android:password="true" />
+
+    <LinearLayout 
+    android:wieghtSum="100"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"  >
+
+      <Button
+      android:layout_weight="50"
+                             |
+                             to jakos dziala na odwrot, wiecej znaczy mniej, ale suma to 100 z gory
+      android:text="Try command"
+      android:id="@+id/bResults"
+      android:layout_width="wrap_content"
+      android:layout_hieght="wrap_content" />
+      
+      <ToggleButton
+      android:layout_weight="50"
+      android:text="ToggleButton"
+      android:id="@+id/tgPassword"
+      android:checked="true"
+                       |
+                       true is on, false is off
+      android:layout_width="fill_parent"
+      android:layout_hieght="wrap_content" />
+
+      
+    </LinearLayout
 
     <TextView
     android:text="invalid"
@@ -32,6 +55,4 @@
   </EditText>
 </LinearLayout>
 
-aktulanie te guziki sa nieladne, lewy u gory i prawy nizej, czyli nie na jednej llinii
-w nastepnym odcinku je wyrownamy
 
