@@ -21,11 +21,7 @@
       >
       <intent-filter>
         <action android:name="com.thenewboston.travis.STARTINGPOINT" />
-                                                      |
-                                                      to jest po prostu nazwa klasy ale musi byc wylacznie duzymi
         <category android:name="android.intent.action.DEFAULT" />
-                                                      |
-                                                      android szuka LAUNCHER a to DEFAULT to sobie tak nazwalismy
       </intent-filter>
     </activity>
     <activity android:name=".Menu" 
@@ -35,6 +31,10 @@
         <action android:name="com.thenewboston.travis.MENU" />
         <category android:name="android.intent.action.DEFAULT" />
       </intent-filter>
+    </activity>
+    <activity android:name=".TextPlay" 
+      android:label="@string/app_name" >
+      lu nie potrzebujemy tutaj action bo bedzie to wywolywane wylacznie z menu czyli przez nazwe klasy
     </activity>
   </application>
 </manifest>

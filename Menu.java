@@ -6,7 +6,7 @@ import ... arrayAdapter
 
 public class Menu extends ListAvtivity {
 
-  String classes[] = {"startingPoint", "lukasz1", "lukasz2"};
+  String classes[] = {"startingPoint", "TextPlay", "lukasz2"};
 
   @Override
   protection void onCreate(Bundle savedInstanceState
