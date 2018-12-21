@@ -16,15 +16,17 @@ public class Menu extends ListAvtivity {
  
   @Override
   protected void onListItemClick(ListView l, View v, int position, long id) {
+    String cheese = classes[position];
     super.onListItemClick(1, v, position, id);
-    Class ourClass = Class.forName("com.thenewboston.travis.startingPoint");
-                                    |
-                                    to jest referencja do pliku startingPoint.java
+    try {
+    |
+    dodalismy na wypadek gdyby klasa startngPoint nie byla znaleziona
+    Class ourClass = Class.forName("com.thenewboston.travis." + cheese );
     Intent ourIntent = new Intent(Menu.this, ourClass);
-                                   |         |
-                                   |         nazwa klasy
-                                   to jest context, czyli ze w klasie Menu
     startActivity(ourIntent);
+    } catch(ClasssNotFoundException e) {
+      e.printStackTrace();
+      }
   }
 
 
