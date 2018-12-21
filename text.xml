@@ -1,11 +1,7 @@
-tu trzeba wyrownac buttony
 
 <?xml version="1.0" encouding="utf-8"?>
 <LinearLayout
    xmlns:android="http://schemas.android.com/apk/res/android"
-   android:padding="25dp"
-                    |
-                    to jest padding wokol wszystkiego, jakby ramka przy brzegu ekranu dookola
    android:orientation="vertical"
    android:layout_width="match_parent"
    android:layout_height="match_parent" >
@@ -27,7 +23,7 @@ tu trzeba wyrownac buttony
       android:layout_weight="50"
                              |
                              to jakos dziala na odwrot, wiecej znaczy mniej, ale suma to 100 z gory
-      android:text="Try command"
+      android:text="Button"
       android:id="@+id/bResults"
       android:layout_width="wrap_content"
       android:layout_hieght="wrap_content" />
@@ -35,10 +31,7 @@ tu trzeba wyrownac buttony
       <ToggleButton
       android:layout_weight="50"
       android:text="ToggleButton"
-      android:id="@+id/tgPassword"
-      android:checked="true"
-                       |
-                       true is on, false is off
+      android:id="@+id/toggleButton1"
       android:layout_width="fill_parent"
       android:layout_hieght="wrap_content" />
 
